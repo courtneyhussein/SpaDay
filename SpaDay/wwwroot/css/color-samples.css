@@ -1,0 +1,60 @@
+﻿.color-container {
+    width: 90%;
+    height: 30%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 100px;
+    grid-gap: 5px;
+}
+
+.top-padding {
+    padding-top: 30px;
+}
+
+.color1 {
+    background-color: cadetblue;
+}
+.color2 {
+    background-color: red;
+}
+.color3 {
+    background-color: darkred;
+}
+.color4 {
+    background-color: indianred;
+}
+.color5 {
+    background-color: palevioletred;
+}
+.color6 {
+    background-color: hotpink;
+}
+.color7 {
+    background-color: mediumpurple;
+}
+.color8 {
+    background-color: rebeccapurple;
+}
+.color9 {
+    background-color: purple;
+}
+.color10 {
+    background-color: darkgreen;
+}
+.color11 {
+    background-color: darkslategrey;
+}
+.color12 {
+    background-color: forestgreen;
+}
+.color13 {
+    background-color: yellow;
+}
+   .color14 {
+    background-color: orange;
+}
+.color15 {
+    background-color: coral;
+}
+
+

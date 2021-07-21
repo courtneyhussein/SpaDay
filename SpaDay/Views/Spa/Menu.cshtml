@@ -7,43 +7,62 @@
 </div>
 <div id="servicesMenu">
 </div>
+<body>
+    <h1>Fancy Spa</h1>
+    <div id="clientProfile">
+        <h3>Client Profile</h3>
+        <p>@ViewBag.name</p>
+    </div>
+    <div id="servicesMenu">
 
-<h1>Fancy Spa</h1>
-<div id="clientProfile">
-    <h3>Client Profile</h3>
-    <p>@ViewBag.name</p>
-</div>
-<div id="servicesMenu">
+        <h5>Facial Treatments</h5>
+        <p>Your @ViewBag.skintype skin type is best suited to the follow facial types:</p>
 
-    <h5>Facial Treatments</h5>
-    <p>Your @ViewBag.skintype skin type is best suited to the follow facial types:</p>
+        <ul>
+            @foreach (string facial in ViewBag.facials)
+            {
+                <li>@facial</li>
+            }
+        </ul>
 
-    <ul>
-        @foreach (string facial in ViewBag.facials)
+        <h5>Nail Services</h5>
+
+        @if (ViewBag.manipedi == "manicure")
         {
-            <li>@facial</li>
+            <p>Our manicure is a great way to spend 30 minutes of your day! We use shea butter hand cream and the finest gel polish.</p>
         }
-    </ul>
+        else if (ViewBag.manipedi == "pedicure")
+        {
+            <p>Relax for 45 minutes in pure luxury! Our massage chairs and experienced nail techs are here to get your feet in shape for sandal season!</p>
+        }
+        else
+        {
+            <p>Our manicure is a great way to spend 30 minutes of your day! We use shea butter hand cream and the finest gel polish.</p>
+            <p>Relax for 45 minutes in pure luxury! Our massage chairs and experienced nail techs are here to get your feet in shape for sandal season!</p>
+        }
 
-    <h5>Nail Services</h5>
 
-    @if (ViewBag.manipedi == "manicure")
-    {
-        <p>Our manicure is a great way to spend 30 minutes of your day! We use shea butter hand cream and the finest gel polish.</p>
-    }
-    else if (ViewBag.manipedi == "pedicure")
-    {
-        <p>Relax for 45 minutes in pure luxury! Our massage chairs and experienced nail techs are here to get your feet in shape for sandal season!</p>
-    }
-    else
-    {
-        <p>Our manicure is a great way to spend 30 minutes of your day! We use shea butter hand cream and the finest gel polish.</p>
-        <p>Relax for 45 minutes in pure luxury! Our massage chairs and experienced nail techs are here to get your feet in shape for sandal season!</p>
-    }
+        <h3 class="top-padding">Nail Polish Color Samples</h3>
 
-</div>
+    </div>
+    <div class="color-container">
+        <div class="color1"></div>
+        <div class="color2"></div>
+        <div class="color3"></div>
+        <div class="color4"></div>
+        <div class="color5"></div>
+        <div class="color6"></div>
+        <div class="color7"></div>
+        <div class="color8"></div>
+        <div class="color9"></div>
+        <div class="color10"></div>
+        <div class="color11"></div>
+        <div class="color12"></div>
+        <div class="color13"></div>
+        <div class="color14"></div>
+        <div class="color15"></div>
+    </div>
+</body>
 
-<div>
-    <img src="https://m.media-amazon.com/images/I/816DGwWT09L._SL1500_.jpg" alt="image of nail polish containers" style="width: 400px; height: auto;"/>
-</div>
+
 
