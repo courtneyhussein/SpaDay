@@ -7,3 +7,9 @@
 <h1>Welcome to the spa, @ViewBag.username!</h1>
 
 <a asp-controller="Spa" asp-action="Index">Select Spa Details</a>
+
+<div style="position: fixed; bottom: 100px;">
+    <h5>Account Info</h5>
+    <p>Email: @ViewBag.email</p>
+    <p>Acount Creation Date: @ViewBag.date</p>
+</div>

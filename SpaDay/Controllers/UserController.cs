@@ -17,8 +17,8 @@ namespace SpaDay.Controllers
         //Get //user/add
         //This Action pulls up the Add User form for filling out.
         [HttpGet]
-        [HttpPost]
-        [Route("/User/Add")]//dont think i need this
+        //[HttpPost]
+        //[Route("/User/Add")]//dont think i need this
         public IActionResult Add()
         {
             return View();
@@ -33,6 +33,8 @@ namespace SpaDay.Controllers
             if (newUser.Password == verify)
             {
                 ViewBag.username = newUser.UserName;
+                ViewBag.email = newUser.Email;
+                ViewBag.date = newUser.AccountCreationDate;
                 return View("Index");
             }
             else
